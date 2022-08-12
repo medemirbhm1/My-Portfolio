@@ -1,0 +1,53 @@
+.app__header {
+  background-color: var(--background-color);
+  position: relative;
+  .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .app__header-text {
+      color: var(--white-color);
+      span {
+        font-size: 24px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      h1 {
+        font-size: 48px;
+      }
+      p {
+        letter-spacing: 0.5px;
+        margin: 20px 0 30px;
+      }
+      .btn {
+        background-color: var(--white-color);
+        color: var(--background-color);
+        font-weight: 500;
+        padding: 15px 20px;
+        border-radius: 5rem;
+        border: 1.5px solid var(--white-color);
+        transition: 0.3s ease;
+        text-decoration: none;
+      }
+    }
+    > img {
+      max-width: 400px;
+    }
+    @media (max-width: 767px) {
+      padding-top: 6rem;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 2rem;
+      > img {
+        align-self: center;
+        width: 300px;
+        max-width: 100%;
+      }
+    }
+  }
+  .wave {
+    position: absolute;
+  }
+}

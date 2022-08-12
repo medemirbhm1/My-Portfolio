@@ -1,0 +1,35 @@
+.app__skills {
+  .container {
+    margin-top: 50px;
+    .skills-list {
+      gap: 20px;
+      flex-wrap: wrap;
+      .skill {
+        flex-direction: column;
+        gap: 5px;
+        > div {
+          background-color: #fff;
+          width: 80px;
+          height: 80px;
+          padding: 5px;
+          border-radius: 50%;
+          gap: 5px;
+          img {
+            width: 60%;
+          }
+          &:hover {
+            box-shadow: 0 0 25px #fef4f5;
+          }
+
+        }
+        p {
+          font-size: 14px;
+          text-align: center;
+          margin-top: 10px;
+          font-weight: 500;
+          color: var(--brown-color);
+        }
+      }
+    }
+  }
+}
