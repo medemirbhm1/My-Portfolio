@@ -8,7 +8,7 @@ function Nav() {
       <div className="container">
         <div className="app__navbar-logo">Emir</div>
         <ul className="app__navbar-links">
-          {["home", "about", "contact", "work", "skills"].map((item) => (
+          {["home", "about", "work", "skills", "contact"].map((item) => (
             <li key={item} className="app__flex p-text">
               <a href={`#${item}`}>{item}</a>
               <div />
@@ -17,12 +17,10 @@ function Nav() {
         </ul>
         <div className="app__navbar-menu">
           <HiMenuAlt4 onClick={() => setToggle(true)} />
-          <div
-            className={toggle && "active"}
-          >
+          <div className={toggle && "active"}>
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {["home", "about", "contact", "work", "skills"].map((item) => (
+              {["home", "about", "work", "skills", "contact"].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}

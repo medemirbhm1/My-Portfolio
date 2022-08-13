@@ -15,7 +15,7 @@ function Skills() {
     client.fetch(expQuery).then((data) => setEducation(data));
   }, []);
   return skills && education ? (
-    <div className="app__skills">
+    <div className="app__skills" id="skills">
       <div className="sec-title">
         <span>what i do</span>
         <h2>My Skills</h2>
