@@ -7,14 +7,11 @@ import "./skills.scss";
 
 function Skills() {
   const [skills, setSkills] = useState(null);
-  const [education, setEducation] = useState(null);
   useEffect(() => {
     const skQuery = "*[_type == 'skills']";
-    const expQuery = "*[_type == 'education']";
     client.fetch(skQuery).then((data) => setSkills(data));
-    client.fetch(expQuery).then((data) => setEducation(data));
   }, []);
-  return skills && education ? (
+  return skills  ? (
     <div className="app__skills" id="skills">
       <div className="sec-title">
         <span>what i do</span>
@@ -27,6 +24,7 @@ function Skills() {
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
               key={skill.name}
+              viewport={{ once: true }}
               className="skill"
             >
               <div

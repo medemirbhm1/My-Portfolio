@@ -14,8 +14,37 @@
       .sec-title {
         text-align: start;
       }
+      > p {
+        margin-bottom: 20px;
+      }
       p {
         color: #5f5e79;
+      }
+      .edu {
+        border-left: 6px solid #dfdfdf;
+        padding-left: 25px;
+        .period {
+          margin-bottom: 10px;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            left: -32px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            opacity: 0.4;
+          }
+          &.active::before{
+            opacity: 1;
+          }
+          h3 {
+            color: var(--secondary-color);
+            font-weight: 500;
+          }
+        }
       }
     }
     @media (max-width: 767px) {

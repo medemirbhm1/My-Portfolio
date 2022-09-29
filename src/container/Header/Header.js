@@ -8,6 +8,7 @@ function Header() {
       <motion.div
         whileInView={{ y: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.85 }}
+        viewport={{ once: true }}
         className="app__header-info"
       >
         <div className="container">
