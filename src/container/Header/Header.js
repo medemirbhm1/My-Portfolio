@@ -14,8 +14,8 @@ function Header() {
         <div className="container">
           <div className="app__header-text">
             <span>It's Emir, i'm a</span>
-            <h1>Frontend Developer</h1>
-            <p>Freelance frontend dev based in Algeria, let's work together.</p>
+            <h1>Software engineer</h1>
+            <p>Freelancer based in Algeria, let's work together.</p>
             <a href="#contact" class="btn">
               Contact Me
             </a>

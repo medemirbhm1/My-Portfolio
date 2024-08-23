@@ -1,4 +1,5 @@
 .app__skills {
+  padding: 100px 0 0;
   .container {
     margin-top: 50px;
     .skills-list {
@@ -20,7 +21,6 @@
           &:hover {
             box-shadow: 0 0 25px #fef4f5;
           }
-
         }
         p {
           font-size: 14px;
